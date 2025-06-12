@@ -117,21 +117,16 @@
 
 .product-card button:hover {
     background-color: #0056b3;
-}
-  /* Shopping cart */
+}  /* Shopping cart */
 .cart {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px;
+    margin-bottom: 20px;
     max-height: 400px;
     overflow-y: auto;
-    z-index: 1000;
 }
 
 .cart h2 {
@@ -252,12 +247,6 @@
 @media (max-width: 768px) {
     .product-page {
         padding: 10px;
-    }
-    
-    .cart {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
     }
     
     .filters input {

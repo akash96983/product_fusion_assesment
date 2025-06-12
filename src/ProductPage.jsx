@@ -122,7 +122,14 @@ const ProductPage = () => {
           <option value="">All Categories</option>
           {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
         </select>
-      </div>
+      </div>      {/* Products */}
+      {loading ? <Loading /> : (
+        <div className="product-grid">
+          {filteredProducts.map(p => (
+            <ProductCard key={p.id} product={p} onAddToCart={addToCart} />
+          ))}
+        </div>
+      )}
 
       {/* Cart */}
       <div className="cart">
@@ -134,15 +141,6 @@ const ProductPage = () => {
           </>
         )}
       </div>
-
-      {/* Products */}
-      {loading ? <Loading /> : (
-        <div className="product-grid">
-          {filteredProducts.map(p => (
-            <ProductCard key={p.id} product={p} onAddToCart={addToCart} />
-          ))}
-        </div>
-      )}
     </div>
   );
 };
