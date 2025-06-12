@@ -8,19 +8,6 @@ A simple React app that shows products from an online store. You can browse prod
 - **Shopping Cart**: Add/remove products and see total price
 - **Dashboard**: Shows charts and data about products
 
-## How to Use
-
-1. Install packages:
-   ```
-   npm install
-   ```
-
-2. Start the app:
-   ```
-   npm run dev
-   ```
-
-3. Open your browser and go to the URL shown in terminal (usually http://localhost:5173)
 
 ## Features
 
@@ -68,10 +55,4 @@ Products come from: https://fakestoreapi.com/products
 
 The app saves your cart in browser storage so it remembers your items when you refresh the page.
 
-## How to Build for Production
 
-```
-npm run build
-```
-
-This creates a `dist` folder with files ready for deployment.
